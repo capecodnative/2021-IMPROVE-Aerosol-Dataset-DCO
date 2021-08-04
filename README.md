@@ -5,9 +5,9 @@ Figures are output in the '/Figures' subfolder.
 A list of variables, their units, descriptions, etc. is provided in the Excel file 'IMPROVE Aerosol Variables.xlsx' (or from the source data repository itself).
 
 A quick summary of the chemical compositional and metadata variables included in the .mat import ('2021-07-30_IMPROVE.mat') is provided here:
-___| Matlab Parameter Name | Description                                      |
-|-----------------------|--------------------------------------------------|
-| Al                    | Aluminum (Fine)                                  |
+___| Matlab Parameter Name | Description                                      |  
+|-----------------------|--------------------------------------------------|  
+| Al                    | Aluminum (Fine)                                  |  
 | AmmNO3                | Ammonium Nitrate (Fine)                          |
 | AmmSO4                | Ammonium Sulfate (Fine)                          |
 | As                    | Arsenic (Fine)                                   |
