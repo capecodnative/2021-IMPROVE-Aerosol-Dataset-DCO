@@ -1,0 +1,14 @@
+SitePopulations25kmRad=nan(221,4);
+SiteLandArea25kmRad=nan(221,1);
+for i=1:221
+    tempCircle=fliplr(scircle1(SiteLat(i),SiteLon(i),12.5,[],earthRadius('km')));
+    tempRequest.polygon=tempCircle;
+    tempResponse=webwrite('https://sedac.ciesin.columbia.edu/arcgis/rest/services/sedac/pesv3Broker/GPServer/pesv3Broker/execute',...
+        'Input_Data',jsonencode(tempRequest),'f','json',weboptions('Timeout',40));
+    tempResponseDecoded=jsondecode(tempResponse);
+    SitePopulations(i,1)=str2num(tempResponseDecoded.results.value.estimates.gpw_v4_population_count_rev10_2000.SUM);
+    SitePopulations(i,2)=str2num(tempResponseDecoded.results.value.estimates.gpw_v4_population_count_rev10_2005.SUM);
+    SitePopulations(i,3)=str2num(tempResponseDecoded.results.value.estimates.gpw_v4_population_count_rev10_2015.SUM);
+    SitePopulations(i,4)=str2num(tempResponseDecoded.results.value.estimates.gpw_v4_population_count_rev10_2020.SUM);
+    SiteLandArea25kmRad(i)=str2num(tempResponseDecoded.results.value.estimates.gpw_v4_land_water_area_rev10_landareakm.SUM);
+end
