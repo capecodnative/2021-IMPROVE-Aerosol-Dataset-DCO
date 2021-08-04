@@ -1,10 +1,11 @@
 # 2021-IMPROVE-Aerosol-Dataset-DCO
 This is a (primarily MATLAB-based) working folder for interaction with the IMPROVE Aerosol Dataset, available from http://vista.cira.colostate.edu/Improve/improve-data/
 
-Figures are output in the '/Figures' subfolder.
-A list of variables, their units, descriptions, etc. is provided in the Excel file 'IMPROVE Aerosol Variables.xlsx' (or from the source data repository itself).
-
-A quick summary of the chemical compositional and metadata variables included in the .mat import ('2021-07-30_IMPROVE.mat') is provided here:  
+Figures are output in the '/Figures' subfolder.  
+A list of variables, their units, descriptions, etc. is provided in the Excel file 'IMPROVE Aerosol Variables.xlsx' (or from the source data repository itself).  
+  
+A quick list of the chemical compositional variables included in the .mat import ('2021-07-30_IMPROVE.mat') is provided here:  
+  
 ___| Matlab Parameter Name | Description                                      |  
 |-----------------------|--------------------------------------------------|  
 | Al                    | Aluminum (Fine)                                  |  
