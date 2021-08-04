@@ -1,3 +1,7 @@
+%Makes single column variables for major chemical composition data in the
+%IMPROVE dataset, originally imported as the "IMP" table using the import
+%script.
+
 Latitude=IMP.Latitude;
 Longitude=IMP.Longitude;
 SiteName=IMP.SiteName;

@@ -1,3 +1,6 @@
+%Fetches population data from SEDAC (NASA). Uses a lat/lon point and a
+%radius. Also fetches the land area within that radius.
+
 SitePopulations100kmRad=nan(221,4);
 SiteLandArea100kmRad=nan(221,1);
 for i=1:221

@@ -1,3 +1,7 @@
+%Makes the variable VarRanges which stores percentile ranges for all
+%variables and sites. VarRanges(site,compositionvar,[25,50,75th prctile])
+
+
 VarRanges=nan(221,57,3);
 for i=1:221
 tc=Site==i;

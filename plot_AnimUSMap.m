@@ -1,7 +1,11 @@
+%Editable scripf for making animated gifs of Range___ variables. Uses the
+%default US figure saved in the 'WholeUSfig.fig' file in the root dir. Use
+%ax=findobj('type','axes') to fetch the three axes (ContUS,Alaska,Hawaii).
+
 filename='./Figures/VMassGravFine_Annual.gif';
 RangeToUse=RangesVMassGravFine;
 
-tempColorLims=prctile(RangeToUse(:,:,1),[5 95],'all');
+tempColorLims=prctile(RangeToUse(:,:,1),[5 95],'all'); %set the color scale 
 for k=1:14:366
     for i=1:3
         scatterm(ax(i),SiteLat,SiteLon,100,RangeToUse(:,k,1),'filled');caxis(ax(i),tempColorLims);

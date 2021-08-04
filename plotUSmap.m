@@ -1,3 +1,6 @@
+%Default Mathworks script for making a US+Alaska+Hawaii map. Then edited by
+%hand and saved as WholeUSfig.fig. (This script is now useless.)
+
 figure
 ax = usamap('all');
 set(ax, 'Visible', 'off')

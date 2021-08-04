@@ -1,3 +1,7 @@
+%Editable script for making "Range___" variables, which store the 50,5,95
+%prctile data values for each day of the year (moving window) for all sites
+%e.g. RangeAlTi(site,dayofyear,[50,5,95th] prctile)
+
 tempRatio=log10(V./MassGravFine);
 tempRatioNoInf=tempRatio;
 tempRatioNoInf(abs(tempRatio)==Inf)=NaN;
